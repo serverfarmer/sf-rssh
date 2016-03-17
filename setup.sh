@@ -4,7 +4,7 @@
 
 
 
-base=/opt/sf-rssh/templates/$OSVER
+base=/opt/farm/ext/rssh/templates/$OSVER
 
 if [ ! -f $base/rssh.tpl ]; then
 	echo "skipping rssh setup, unsupported operating system version"

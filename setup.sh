@@ -14,16 +14,10 @@ fi
 /opt/farm/ext/packages/utils/install.sh rsync openssh-server
 
 if [ "$OSVER" = "debian-buster" ]; then
-
-	if [ "`uname -m`" = "x86_64" ]; then
-		arch="amd64"
-	else
-		arch="i386"
-	fi
-
 	echo "checking for debian package rssh"
 	if [ "`dpkg -l rssh 2>/dev/null |grep ^ii`" = "" ]; then
 		echo "installing rssh from provided deb package"
+		arch=`/opt/farm/ext/system/detect-architecture.sh`
 		dpkg -i /opt/farm/ext/rssh/support/packages/rssh_2.3.4-5+deb9u4_$arch.deb
 	fi
 else

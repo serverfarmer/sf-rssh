@@ -6,6 +6,11 @@ for OpenSSH. It is compatible with the following operating systems:
 - Debian 8.x (Jessie)
 - Debian 9.x (Stretch)
 - Debian 10.x (Buster)
+- Devuan 1.x (Jessie)
+- Devuan 2.x (ASCII)
+- Raspbian 8.x (Jessie)
+- Raspbian 9.x (Stretch)
+- Raspbian 10.x (Buster)
 - Ubuntu 14.04 LTS (Trusty Tahr)
 - Ubuntu 16.04 LTS (Xenial Xerus)
 

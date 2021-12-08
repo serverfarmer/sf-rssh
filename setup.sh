@@ -13,7 +13,7 @@ fi
 
 /opt/farm/ext/packages/utils/install.sh rsync openssh-server
 
-if [ "$OSVER" = "debian-buster" ]; then
+if [ "$OSVER" = "debian-buster" ] || [ "$OSVER" = "debian-bullseye" ]; then
 	echo "checking for debian package rssh"
 	if [ "`dpkg -l rssh 2>/dev/null |grep ^ii`" = "" ]; then
 		echo "installing rssh from provided deb package"
